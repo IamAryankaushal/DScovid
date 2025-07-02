@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 
 # --- Clean GDP Data ---
 print("Cleaning GDP data...")
-gdp_df = pd.read_csv('C:/covid/data/gdp_growth_annual.csv')
+gdp_df = pd.read_csv('C:/covid/Code/gdp_growth_annual.csv')
 gdp_df.rename(columns={
     '2019 [YR2019]': '2019',
     '2020 [YR2020]': '2020',
@@ -24,7 +24,7 @@ print("GDP cleaned")
 
 # --- Clean Unemployment Data ---
 print("Cleaning Unemployment Data...")
-udf = pd.read_csv('C:/covid/data/global_unemployment.csv')
+udf = pd.read_csv('C:/covid/Code/global_unemployment.csv')
 udf.rename(columns={
     '2015 [YR2015]': '2015',
     '2016 [YR2016]': '2016',
@@ -44,7 +44,7 @@ print("Unemployment data cleaned")
 
 # --- Clean COVID Data ---
 print("Cleaning COVID data...")
-covid_df = pd.read_csv('C:/covid/data/WHO-COVID-19-global-daily-data.csv')
+covid_df = pd.read_csv('C:/covid/Code/WHO-COVID-19-global-daily-data.csv')
 covid_df['Date_reported'] = pd.to_datetime(covid_df['Date_reported'])
 covid_df = covid_df[covid_df['Date_reported'].dt.year.isin([2020, 2021, 2022])]
 covid_df['New_cases'] = covid_df['New_cases'].fillna(0)
@@ -105,7 +105,7 @@ merged_df.drop(columns=['Country Name'], inplace=True)
 
 print("Final merged dataset preview:")
 print(merged_df.head())
-#merged_df.to_csv("C:/covid/data/Merged dataset.csv", index=False)
+#merged_df.to_csv("C:/covid/Code/Merged dataset.csv", index=False)
 
 # SELECTING TEST COUNTRIES FOR THE PROJECT 
 selected_countries = ['India', 'United States', 'Brazil', 'Italy']
@@ -236,6 +236,7 @@ sns.heatmap(heat_df_scaled.sort_values(by='Total_Deaths_2020_2022', ascending=Fa
             cmap='Reds', linewidths=0.5, annot=True)
 plt.title("COVID-19 Economic Impact Heatmap (Top 20 by Deaths)")
 plt.tight_layout()
+#plt.savefig("COVID-19 Economic Impact Heatmap (Top 20 by Deaths).png")
 plt.show()
 
 # --- K-Means Clustering & PCA Dimensionality Reduction ---
@@ -274,5 +275,5 @@ plt.xlabel("Principal Component 1")
 plt.ylabel("Principal Component 2")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("KMeans Clusters COVID Impact PCA.png")
+#plt.savefig("KMeans Clusters COVID Impact PCA.png")
 plt.show()
