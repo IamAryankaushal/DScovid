@@ -48,9 +48,10 @@ The project walks through full-cycle data processing: from data cleaning and tra
 
 ## 📈 Visualizations
 
+
 ### 1. **COVID-19 Case Trends**
 - **Type**: Line Chart (7-day Rolling Avg)
-- **Countries Selected**:
+- **Countries Selected For Testing:**:
   - `India`, `United States`, `Brazil`, `Italy`
 
 <img src="Visualization Outputs/COVID-19 Cases (7-day Rolling Avg) - Selected Countries.png" width="600">
@@ -61,7 +62,10 @@ The project walks through full-cycle data processing: from data cleaning and tra
 - **Type**: Scatter Plot (log scale on cases)
 - Visualizes how total COVID-19 case counts relate to GDP growth, year-wise.
 
-<img src="visualizations/gdp_vs_cases.png" width="600">
+- **Countries Selected For Testing:**:
+  - `India`, `United States`, `Brazil`, `Italy`
+
+<img src="Visualization Outputs/GDP Growth vs COVID-19 Cases (2020–2022).png" width="600">
 
 ---
 
@@ -85,7 +89,7 @@ The project walks through full-cycle data processing: from data cleaning and tra
   - Max unemployment
 - Dimensionality reduction via PCA for visualization
 
-<img src="visualizations/kmeans_pca.png" width="600">
+<img src="Visualization Outputs/KMeans Clusters COVID Impact PCA.png" width="600">
 
 ---
 
