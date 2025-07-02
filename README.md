@@ -77,7 +77,7 @@ The project walks through full-cycle data processing: from data cleaning and tra
   - Avg GDP growth
   - Max unemployment
 
-<img src="visualizations/heatmap_dashboard.png" width="600">
+<img src="Visualization Outputs/COVID-19 Economic Impact Heatmap (Top 20 by Deaths).png" width="600">
 
 ---
 
