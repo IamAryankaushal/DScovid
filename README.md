@@ -53,7 +53,7 @@ The project walks through full-cycle data processing: from data cleaning and tra
 - **Countries Selected**:
   - `India`, `United States`, `Brazil`, `Italy`
 
-<img src="C:\covid\Visualization Outputs\COVID-19 Cases (7-day Rolling Avg) - Selected Countries.png" width="600">
+<img src="Visualization Outputs/COVID-19 Cases (7-day Rolling Avg) - Selected Countries.png" width="600">
 
 ---
 
