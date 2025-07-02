@@ -21,8 +21,8 @@ The project walks through full-cycle data processing: from data cleaning and tra
 | Dataset | Source | Description |
 |--------|--------|-------------|
 | `WHO-COVID-19-global-daily-data.csv` | [WHO](https://covid19.who.int) | Daily reported cases and deaths globally |
-| `gdp_growth_annual.csv` | World Bank | Annual GDP growth rates per country |
-| `global_unemployment.csv` | World Bank | Annual total unemployment rates per country |
+| `gdp_growth_annual.csv` | [World Bank](https://databank.worldbank.org/source/world-development-indicators) | Annual GDP growth rates per country |
+| `global_unemployment.csv` | [World Bank](https://databank.worldbank.org/source/world-development-indicators) | Annual total unemployment rates per country |
 
 ---
 
@@ -30,8 +30,9 @@ The project walks through full-cycle data processing: from data cleaning and tra
 
 - **Python** – pandas, matplotlib, seaborn, scikit-learn, sqlite3
 - **SQL** – In-memory analysis using SQLite
-- **Machine Learning** – K-Means Clustering, Principal Component Analysis (PCA)
 - **Visualization** – Line plots, scatter plots, heatmaps
+- **Methods** – K-Means Clustering, Principal Component Analysis (PCA)
+
 
 ---
 
